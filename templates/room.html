@@ -28,6 +28,21 @@ body {
   display: table;
 }
 
+.chat-header {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .go-back {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: #4CAF50;
+        font-size: 16px;
+    }
 .container img {
   float: left;
   max-width: 60px;
@@ -56,7 +71,11 @@ body {
 </head>
 <body>
 
-<h2>{{user}} welcome to {{room}} - DjChat</h2>
+  <div class="container chat-header">
+    <h2>Welcome to the Chatroom for the {{ room }} department</h2>
+    <a href="/" class="go-back">Go back</a>
+</div>
+
 
 <div id="display">
 
